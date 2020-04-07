@@ -5,6 +5,7 @@
 //  Created by 90304566 on 2/11/20.
 //  Copyright © 2020 90304593. All rights reserved.
 //
+// This is a test comment
 
 import UIKit
 
@@ -13,6 +14,7 @@ class ScheduledAlarmsController: UIViewController {
     @IBOutlet weak var alarmsListLabel: UILabel!
     
     var alarmsList = [Alarm]()
+    let testvar = 1
     
     override func viewDidLoad() {
         
