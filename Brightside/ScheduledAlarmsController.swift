@@ -14,7 +14,7 @@ class ScheduledAlarmsController: UIViewController {
     @IBOutlet weak var alarmsListLabel: UILabel!
     
     var alarmsList = [Alarm]()
-    let testvar = 1
+    let testvar = 5
     
     override func viewDidLoad() {
         
