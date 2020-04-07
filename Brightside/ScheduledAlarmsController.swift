@@ -1,6 +1,6 @@
 //
 //  ScheduledAlarmsController.swift
-//  Brightside
+//  Mr. Brightside
 //
 //  Created by 90304566 on 2/11/20.
 //  Copyright © 2020 90304593. All rights reserved.
