@@ -1,24 +1,206 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lCv-oP-903">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home Screen-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Home Screen" customClass="ViewController" customModule="Brightside" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When Will It Play?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXm-q0-63J">
+                                <rect key="frame" x="32" y="168" width="350" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="nHu-d2-2eB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXE-Ur-guf">
+                                <rect key="frame" x="7" y="225" width="400" height="114"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="114" id="cuZ-ba-fLb"/>
+                                </constraints>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9o4-Kk-Rmc">
+                                <rect key="frame" x="57" y="780" width="300" height="42"/>
+                                <color key="backgroundColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="HXY-we-eLc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="20"/>
+                                <state key="normal" title="View Scheduled Alarms">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ybN-rZ-UQs" kind="show" id="erh-n6-QXz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58k-M3-49x">
+                                <rect key="frame" x="294" y="98" width="106" height="36"/>
+                                <color key="backgroundColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="rUc-yE-Jf4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="15"/>
+                                <state key="normal" title="Clear All">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u6b-9J-YRZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gvl-XG-8K1">
+                                <rect key="frame" x="7" y="339" width="400" height="64"/>
+                                <color key="backgroundColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="400" id="BNS-TP-MH9"/>
+                                    <constraint firstAttribute="height" constant="64" id="Fv8-B2-9t7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="30"/>
+                                <state key="normal" title="Enter">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Mc-ei-Xm2"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3xD-HE-tdM">
+                                <rect key="frame" x="7" y="511" width="400" height="220"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaa-FC-6Xz">
+                                        <rect key="frame" x="0.0" y="0.0" width="400" height="100"/>
+                                        <color key="backgroundColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="GXo-fp-G38"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="400" id="uO3-Ob-biQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="30"/>
+                                        <state key="normal" title="End of Class Today">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="setEndOfClass:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dXk-nw-VsX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XmC-kM-43I">
+                                        <rect key="frame" x="0.0" y="120" width="400" height="100"/>
+                                        <color key="backgroundColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="400" id="Us2-gB-sND"/>
+                                            <constraint firstAttribute="height" constant="100" id="e8C-Ez-uAX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="EuphemiaUCAS-Bold" family="Euphemia UCAS" pointSize="30"/>
+                                        <state key="normal" title="10 Seconds From Now">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="activateButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="alg-gp-fK1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.14870163798332214" green="0.31338542699813843" blue="0.88711720705032349" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3xD-HE-tdM" firstAttribute="centerX" secondItem="9o4-Kk-Rmc" secondAttribute="centerX" id="0vI-Bf-hcj"/>
+                            <constraint firstItem="58k-M3-49x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="294" id="6P5-Wm-osK"/>
+                            <constraint firstItem="9o4-Kk-Rmc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="8jE-4f-fxx"/>
+                            <constraint firstItem="Gvl-XG-8K1" firstAttribute="top" secondItem="QXE-Ur-guf" secondAttribute="bottom" id="IVc-T7-qoI"/>
+                            <constraint firstItem="QXE-Ur-guf" firstAttribute="leading" secondItem="Gvl-XG-8K1" secondAttribute="leading" id="Kmn-Yd-ZTK"/>
+                            <constraint firstItem="3xD-HE-tdM" firstAttribute="top" secondItem="Gvl-XG-8K1" secondAttribute="bottom" constant="108" id="PiT-ln-p7h"/>
+                            <constraint firstItem="PXm-q0-63J" firstAttribute="trailing" secondItem="QXE-Ur-guf" secondAttribute="trailing" constant="-25" id="R6Q-9m-sme"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9o4-Kk-Rmc" secondAttribute="bottom" constant="40" id="SqL-fi-DJC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="58k-M3-49x" secondAttribute="trailing" constant="14" id="U13-29-gui"/>
+                            <constraint firstItem="PXm-q0-63J" firstAttribute="top" secondItem="58k-M3-49x" secondAttribute="bottom" constant="34" id="WGM-Qg-Vkr"/>
+                            <constraint firstItem="PXm-q0-63J" firstAttribute="leading" secondItem="QXE-Ur-guf" secondAttribute="leading" constant="25" id="bFV-KF-xG8"/>
+                            <constraint firstItem="QXE-Ur-guf" firstAttribute="top" secondItem="PXm-q0-63J" secondAttribute="bottom" constant="8" id="jaP-eP-0eE"/>
+                            <constraint firstItem="58k-M3-49x" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="k98-Ow-Tm1"/>
+                            <constraint firstItem="Gvl-XG-8K1" firstAttribute="centerX" secondItem="3xD-HE-tdM" secondAttribute="centerX" id="lKl-ux-YOn"/>
+                            <constraint firstItem="QXE-Ur-guf" firstAttribute="trailing" secondItem="Gvl-XG-8K1" secondAttribute="trailing" id="pe6-R9-uMq"/>
+                            <constraint firstItem="PXm-q0-63J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ysY-cH-FEg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="t9V-iW-bXk"/>
+                    <connections>
+                        <outlet property="activateButton" destination="XmC-kM-43I" id="n5Z-LG-fuO"/>
+                        <outlet property="clearButton" destination="58k-M3-49x" id="mSw-00-XZW"/>
+                        <outlet property="dateController" destination="QXE-Ur-guf" id="MPz-0D-TZw"/>
+                        <outlet property="enterButton" destination="Gvl-XG-8K1" id="Z8B-ia-hTY"/>
+                        <outlet property="setEndClassButton" destination="gaa-FC-6Xz" id="Jy4-iQ-qv2"/>
+                        <outlet property="viewScheduledButton" destination="9o4-Kk-Rmc" id="gks-Pp-TGK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="92.410714285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YRx-B0-Ite">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lCv-oP-903" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rKw-tD-jBy">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MkS-f8-cuR">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="7R7-yd-Uf5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TyI-85-0qG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="92.410714285714278"/>
+        </scene>
+        <!--Scheduled Alarms-->
+        <scene sceneID="Wne-NS-7dE">
+            <objects>
+                <viewController id="ybN-rZ-UQs" userLabel="Scheduled Alarms" customClass="ScheduledAlarmsController" customModule="Brightside" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iWV-V9-Lta">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alarms" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQ6-HH-gZY">
+                                <rect key="frame" x="43" y="88" width="328" height="774"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="774" id="dO6-rS-hew"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.073872417099217907" green="0.39554810523986816" blue="0.24310944795386236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bQ6-HH-gZY" firstAttribute="top" secondItem="Vkb-3F-gcp" secondAttribute="top" id="1go-JL-RLX"/>
+                            <constraint firstItem="bQ6-HH-gZY" firstAttribute="centerX" secondItem="iWV-V9-Lta" secondAttribute="centerX" id="MYu-4l-p8D"/>
+                            <constraint firstItem="bQ6-HH-gZY" firstAttribute="leading" secondItem="Vkb-3F-gcp" secondAttribute="leading" constant="43" id="RHP-Hb-taS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Vkb-3F-gcp"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HbB-a7-IAN"/>
+                    <connections>
+                        <outlet property="alarmsListLabel" destination="bQ6-HH-gZY" id="LvQ-g7-XPS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bsC-Mh-r9R" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="815.625"/>
         </scene>
     </scenes>
 </document>

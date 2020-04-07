@@ -15,6 +15,19 @@
 		9E05B99223E4667800DB34FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E05B99023E4667800DB34FC /* LaunchScreen.storyboard */; };
 		9E05B99D23E4667800DB34FC /* BrightsideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05B99C23E4667800DB34FC /* BrightsideTests.swift */; };
 		9E05B9A823E4667800DB34FC /* BrightsideUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05B9A723E4667800DB34FC /* BrightsideUITests.swift */; };
+		9E05B9B623E4899E00DB34FC /* Blue.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9E05B9B523E4899D00DB34FC /* Blue.mp3 */; };
+		9E51402923EDC0C400F863C4 /* BluePt5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9E51402823EDC0C400F863C4 /* BluePt5.mp3 */; };
+		9E51402B23EDC0C900F863C4 /* BluePt6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9E51402A23EDC0C900F863C4 /* BluePt6.mp3 */; };
+		9E51402D23EDC0CE00F863C4 /* BluePt7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9E51402C23EDC0CE00F863C4 /* BluePt7.mp3 */; };
+		9E51402F23EDC0D200F863C4 /* BluePt8.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9E51402E23EDC0D100F863C4 /* BluePt8.mp3 */; };
+		9E51403123EDC0D600F863C4 /* BluePt9.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9E51403023EDC0D600F863C4 /* BluePt9.mp3 */; };
+		9EB0698E23EB1F1D002A2F82 /* BluePt1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9EB0698D23EB1F1D002A2F82 /* BluePt1.mp3 */; };
+		9EB0699023EB2112002A2F82 /* BluePt2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9EB0698F23EB2111002A2F82 /* BluePt2.mp3 */; };
+		9EB0699223EB211A002A2F82 /* BluePt3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9EB0699123EB211A002A2F82 /* BluePt3.mp3 */; };
+		9EB0699423EB211F002A2F82 /* BluePt4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9EB0699323EB211F002A2F82 /* BluePt4.mp3 */; };
+		EF3F1E63240430B10047E647 /* AlarmSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3F1E62240430B10047E647 /* AlarmSegment.swift */; };
+		EF3F1E65240432590047E647 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3F1E64240432590047E647 /* Alarm.swift */; };
+		EFB0785A23F315BF0008B3BF /* ScheduledAlarmsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB0785923F315BF0008B3BF /* ScheduledAlarmsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +62,19 @@
 		9E05B9A323E4667800DB34FC /* BrightsideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrightsideUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E05B9A723E4667800DB34FC /* BrightsideUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightsideUITests.swift; sourceTree = "<group>"; };
 		9E05B9A923E4667800DB34FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E05B9B523E4899D00DB34FC /* Blue.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Blue.mp3; sourceTree = "<group>"; };
+		9E51402823EDC0C400F863C4 /* BluePt5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BluePt5.mp3; sourceTree = "<group>"; };
+		9E51402A23EDC0C900F863C4 /* BluePt6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BluePt6.mp3; sourceTree = "<group>"; };
+		9E51402C23EDC0CE00F863C4 /* BluePt7.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BluePt7.mp3; sourceTree = "<group>"; };
+		9E51402E23EDC0D100F863C4 /* BluePt8.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BluePt8.mp3; sourceTree = "<group>"; };
+		9E51403023EDC0D600F863C4 /* BluePt9.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BluePt9.mp3; sourceTree = "<group>"; };
+		9EB0698D23EB1F1D002A2F82 /* BluePt1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BluePt1.mp3; sourceTree = "<group>"; };
+		9EB0698F23EB2111002A2F82 /* BluePt2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BluePt2.mp3; sourceTree = "<group>"; };
+		9EB0699123EB211A002A2F82 /* BluePt3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BluePt3.mp3; sourceTree = "<group>"; };
+		9EB0699323EB211F002A2F82 /* BluePt4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BluePt4.mp3; sourceTree = "<group>"; };
+		EF3F1E62240430B10047E647 /* AlarmSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmSegment.swift; sourceTree = "<group>"; };
+		EF3F1E64240432590047E647 /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		EFB0785923F315BF0008B3BF /* ScheduledAlarmsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduledAlarmsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +127,20 @@
 			children = (
 				9E05B98523E4667500DB34FC /* AppDelegate.swift */,
 				9E05B98723E4667500DB34FC /* SceneDelegate.swift */,
+				EF3F1E62240430B10047E647 /* AlarmSegment.swift */,
+				EF3F1E64240432590047E647 /* Alarm.swift */,
 				9E05B98923E4667500DB34FC /* ViewController.swift */,
+				EFB0785923F315BF0008B3BF /* ScheduledAlarmsController.swift */,
+				9E05B9B523E4899D00DB34FC /* Blue.mp3 */,
+				9EB0698D23EB1F1D002A2F82 /* BluePt1.mp3 */,
+				9EB0698F23EB2111002A2F82 /* BluePt2.mp3 */,
+				9EB0699123EB211A002A2F82 /* BluePt3.mp3 */,
+				9EB0699323EB211F002A2F82 /* BluePt4.mp3 */,
+				9E51402823EDC0C400F863C4 /* BluePt5.mp3 */,
+				9E51402A23EDC0C900F863C4 /* BluePt6.mp3 */,
+				9E51402C23EDC0CE00F863C4 /* BluePt7.mp3 */,
+				9E51402E23EDC0D100F863C4 /* BluePt8.mp3 */,
+				9E51403023EDC0D600F863C4 /* BluePt9.mp3 */,
 				9E05B98B23E4667500DB34FC /* Main.storyboard */,
 				9E05B98E23E4667800DB34FC /* Assets.xcassets */,
 				9E05B99023E4667800DB34FC /* LaunchScreen.storyboard */,
@@ -232,9 +271,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EB0699223EB211A002A2F82 /* BluePt3.mp3 in Resources */,
+				9E51403123EDC0D600F863C4 /* BluePt9.mp3 in Resources */,
+				9EB0699423EB211F002A2F82 /* BluePt4.mp3 in Resources */,
+				9E51402D23EDC0CE00F863C4 /* BluePt7.mp3 in Resources */,
 				9E05B99223E4667800DB34FC /* LaunchScreen.storyboard in Resources */,
+				9E51402B23EDC0C900F863C4 /* BluePt6.mp3 in Resources */,
+				9E51402F23EDC0D200F863C4 /* BluePt8.mp3 in Resources */,
 				9E05B98F23E4667800DB34FC /* Assets.xcassets in Resources */,
+				9E05B9B623E4899E00DB34FC /* Blue.mp3 in Resources */,
+				9E51402923EDC0C400F863C4 /* BluePt5.mp3 in Resources */,
+				9EB0698E23EB1F1D002A2F82 /* BluePt1.mp3 in Resources */,
 				9E05B98D23E4667500DB34FC /* Main.storyboard in Resources */,
+				9EB0699023EB2112002A2F82 /* BluePt2.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +310,10 @@
 			files = (
 				9E05B98A23E4667500DB34FC /* ViewController.swift in Sources */,
 				9E05B98623E4667500DB34FC /* AppDelegate.swift in Sources */,
+				EF3F1E63240430B10047E647 /* AlarmSegment.swift in Sources */,
 				9E05B98823E4667500DB34FC /* SceneDelegate.swift in Sources */,
+				EFB0785A23F315BF0008B3BF /* ScheduledAlarmsController.swift in Sources */,
+				EF3F1E65240432590047E647 /* Alarm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,11 +489,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 883DK65VTV;
 				INFOPLIST_FILE = Brightside/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.edenprairieschools.Brightside;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.ephs2020.brightside;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -455,11 +508,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 883DK65VTV;
 				INFOPLIST_FILE = Brightside/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.edenprairieschools.Brightside;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.ephs2020.brightside;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
